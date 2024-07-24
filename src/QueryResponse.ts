@@ -1,11 +1,10 @@
-import { IAddress, IFilings, IFormerName, ICompany } from "./SecEdgar";
 export interface IPaginationQuery {
   page?: number;
   limit?: number;
 }
 
-export interface IPaginatedCompanyResponse {
-  data: ICompany[];
+export interface IPaginatedResponse<T> {
+  data: T[];
   total: number;
   page: number;
   last_page: number;
