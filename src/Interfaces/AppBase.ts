@@ -1,4 +1,3 @@
-import { Logger } from "typeorm";
 import { IApp } from "./IApp";
 import { ILogger } from "./ILogger";
 
@@ -29,7 +28,8 @@ export abstract class AppTemplateBase<T> implements IApp<T> {
       this.logger.info("Container initialization completed successfully.");
     } catch (error) {
       await this.logger.error(
-        "Failed during container initialization: ", error
+        "Failed during container initialization: ",
+        error
       );
       return;
     }
@@ -40,7 +40,8 @@ export abstract class AppTemplateBase<T> implements IApp<T> {
       this.logger.info("Application initialization completed successfully.");
     } catch (error) {
       await this.logger.error(
-        "Failed during application initialization: ", error
+        "Failed during application initialization: ",
+        error
       );
       return;
     }
@@ -51,7 +52,8 @@ export abstract class AppTemplateBase<T> implements IApp<T> {
       this.logger.info("IOC container registration completed successfully.");
     } catch (error) {
       await this.logger.error(
-        "Failed during IOC container registration: ", error
+        "Failed during IOC container registration: ",
+        error
       );
       return;
     }
@@ -61,9 +63,7 @@ export abstract class AppTemplateBase<T> implements IApp<T> {
       await this.resolve(this.ioc);
       this.logger.info("IOC container resolve completed successfully.");
     } catch (error) {
-      await this.logger.error(
-        "Failed during IOC container resolve: ", error
-      );
+      await this.logger.error("Failed during IOC container resolve: ", error);
       return;
     }
 
@@ -75,8 +75,8 @@ export abstract class AppTemplateBase<T> implements IApp<T> {
       );
     } catch (error) {
       await this.logger.error(
-        "Failed during main application logic execution: " ,
-          (error as Error).stack
+        "Failed during main application logic execution: ",
+        (error as Error).stack
       );
       return;
     }
@@ -87,7 +87,8 @@ export abstract class AppTemplateBase<T> implements IApp<T> {
       this.logger.info("Application shutdown process completed successfully.");
     } catch (error) {
       await this.logger.error(
-        "Failed during application shutdown process: ", error
+        "Failed during application shutdown process: ",
+        error
       );
     }
 
