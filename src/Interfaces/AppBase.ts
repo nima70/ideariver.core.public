@@ -80,18 +80,6 @@ export abstract class AppTemplateBase<T> implements IApp<T> {
       );
       return;
     }
-
-    this.logger.info("Application shutdown process initiated.");
-    try {
-      await this.exit();
-      this.logger.info("Application shutdown process completed successfully.");
-    } catch (error) {
-      await this.logger.error(
-        "Failed during application shutdown process: ",
-        error
-      );
-    }
-
-    this.logger.info("Application execution completed.");
+    this.logger.info("Application is running");
   }
 }
