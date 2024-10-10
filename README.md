@@ -20,7 +20,7 @@ This package is responsible for defining the shared contracts and entities used 
 Install the package using npm:
 
 ```bash
-npm install ideariver-core
+npm install ideariver.core
 ```
 
 ## Usage
