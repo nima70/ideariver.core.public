@@ -1,16 +1,32 @@
-# ideariver/core.public
+# ideariver.core
 
-This repository houses the core entities and interfaces utilized across various applications by the Ideariver team. In the context of Domain-Driven Design (DDD), this is referred to as the "core." Consequently, all components within this repository are abstract, ensuring they can be extended and customized as needed for specific applications.
+ideariver.core is a foundational package designed for IdeaRiver as part of the Domain-Driven Design (DDD) architecture. It serves as the core of the system, containing Data Transfer Objects (DTOs) and interfaces that are completely abstract, with zero dependencies on other libraries.
 
-## Feedback Wanted: Let's Collaborate to Improve!
+This package is responsible for defining the shared contracts and entities used across the entire IdeaRiver ecosystem, without implementation details.
 
-Your insights and experiences are invaluable to me, and I'm eager to hear from you! Here are several ways you can reach out and contribute to our learning community:
-Comments Section Below: Share your thoughts directly under this post. We're looking for feedback on technical clarifications, content suggestions, and your personal experiences with the technologies discussed. Connect with us on social media:
+## Key Features
 
-Follow us on Twitter:   / nima_brv  
-Like us on Facebook: https://www.facebook.com/profile.php?id=61554873742754
-Instagram:   / ideariver_official  
-TikTok:   / ideariver  
-Linkedin: www.linkedin.com/in/nima-shokouhfar
+- Domain-Driven Design (DDD) Core Layer: Acts as the core layer in DDD by providing abstract types - and contracts.
+- DTO and Interfaces: Contains common interfaces and DTOs that define the structure of the system.
+- Zero Dependencies: This package doesn't rely on any external dependencies, making it lightweight and highly reusable across various layers of the architecture.
 
-Your participation not only helps us improve but also enriches the community's knowledge base. We're excited to see your comments, learn from your experiences, and answer your questions.
+## Purpose
+
+- Provides a centralized repository for core abstractions that can be used across all IdeaRiver services and applications.
+- Ensures separation of concerns by keeping core logic isolated from business and infrastructure layers.
+
+## Installation
+
+Install the package using npm:
+
+```bash
+npm install ideariver-core
+```
+
+## Usage
+
+Import the DTOs or interfaces from ideariver.core into your domain or service logic:
+
+## License
+
+This package is licensed under the MIT License.
