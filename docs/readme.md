@@ -13,7 +13,7 @@ git submodule update --remote --merge
 Schemas can be found in the following directory:
 
 ```bash
-src/generated/typescript/schema/models/index
+src/models/generated/typescript/schema/models/index
 ```
 
 ## Importing Generated Schemas
