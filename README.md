@@ -15,6 +15,11 @@ This package is responsible for defining the shared contracts and entities used 
 - Provides a centralized repository for core abstractions that can be used across all IdeaRiver services and applications.
 - Ensures separation of concerns by keeping core logic isolated from business and infrastructure layers.
 
+## Maintenance and Documentation
+
+The documentation for package maintainers, including instructions on how to use, update, and manage the package, is located in the docs folder. This includes scripts, maintenance procedures, and any work instructions necessary for managing and maintaining the package.
+
+
 ## Installation
 
 Install the package using npm:
