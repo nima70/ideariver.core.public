@@ -1,3 +1,0 @@
-[submodule "src/models/generated"]
-	path = src/models/generated
-	url = https://github.com/nima70/ideariver.schemas.git
