@@ -6,3 +6,4 @@ export * from "./Interfaces/ILogger";
 export * from "./Interfaces/IBasePlugin";
 export * from "./Entities/PluginMetadata";
 export * from "./Entities/EventMessage";
+export * from "./configs/TopicMapping";
